@@ -15,6 +15,7 @@ CREATE TABLE Staff (
 CREATE TABLE Doctor (
   doctorID INT AUTO_INCREMENT PRIMARY KEY,
   full_name VARCHAR(100) NOT NULL,
+  gender ENUM('male', 'female'),
   specialization VARCHAR(100),
   phone VARCHAR(15),
   email VARCHAR(100),
